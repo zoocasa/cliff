@@ -1,7 +1,7 @@
 package executable
 
 import (
-	"github.com/egjiri/cliff/cliff"
+	"github.com/zoocasa/cliff/cliff"
 )
 
 func init() {

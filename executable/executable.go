@@ -1,6 +1,6 @@
 package executable
 
-import "github.com/egjiri/cliff/cliff"
+import "github.com/zoocasa/cliff/cliff"
 
 // Execute configures the CLI and executes the root command
 func Execute() {

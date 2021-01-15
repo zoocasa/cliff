@@ -6,9 +6,9 @@ import (
 	"regexp"
 	"strings"
 
-	ex "github.com/egjiri/go-kit/exec"
-	"github.com/egjiri/go-kit/ui/print"
 	"github.com/spf13/cobra"
+	ex "github.com/zoocasa/go-kit/exec"
+	"github.com/zoocasa/go-kit/ui/print"
 )
 
 type bashCommands struct {

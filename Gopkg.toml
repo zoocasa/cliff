@@ -1,6 +1,6 @@
 [[constraint]]
-  name = "github.com/egjiri/go-kit"
-  version = ">=0.1.0"
+  name = "github.com/zoocasa/go-kit"
+  version = "0.1.6"
 
 [[constraint]]
   name = "github.com/fatih/color"

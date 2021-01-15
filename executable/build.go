@@ -7,9 +7,9 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/egjiri/cliff/cliff"
-	ex "github.com/egjiri/go-kit/exec"
-	yaml "gopkg.in/yaml.v2"
+	"github.com/zoocasa/cliff/cliff"
+	ex "github.com/zoocasa/go-kit/exec"
+	"gopkg.in/yaml.v2"
 )
 
 type config struct {
@@ -33,7 +33,7 @@ func init() {
 		}
 		gobuildFlags := c.FlagString("gobuild-flags")
 		// TODO: Figure out best way of versioning the docker image instead of defaulting to latest
-		command := fmt.Sprintf("docker run --rm -v %s:/data -e GOOS_TARGET=%s -e GOARCH_TARGET=%s -e GOBUILD_FLAGS=\"%s\" -e REPO=%s egjiri/cliff", currentPath, goos, goarch, gobuildFlags, c.Arg(0))
+		command := fmt.Sprintf("docker run --rm -v %s:/data -e GOOS_TARGET=%s -e GOARCH_TARGET=%s -e GOBUILD_FLAGS=\"%s\" -e REPO=%s zoocasa/cliff", currentPath, goos, goarch, gobuildFlags, c.Arg(0))
 		if err := ex.Execute(command); err != nil {
 			log.Fatal("Error: ", err, "\n", command)
 		}

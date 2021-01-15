@@ -2,24 +2,12 @@
 
 
 [[projects]]
-  digest = "1:7d445594bcc1ad06a78d94110b744793f5c4c7c80270b4af2331ecd857d2d06c"
-  name = "github.com/egjiri/go-kit"
-  packages = [
-    "exec",
-    "testing",
-    "ui/print",
-  ]
-  pruneopts = "UT"
-  revision = "6b3da8ab06f7896d7d5301e1f93cf93bf7ffbbed"
-  version = "v0.7.0"
-
-[[projects]]
-  digest = "1:4bb94bb2d837b5c7489d9e5e1fcffbc81fa1cb43024cbb4fe827787378f01e3b"
+  digest = "1:6e6a015e8e8fa80006309826c6129b59341c56103245da051f206b1b3605f0bb"
   name = "github.com/fatih/color"
   packages = ["."]
   pruneopts = "UT"
-  revision = "507f6050b8568533fb3f5504de8e5205fa62a114"
-  version = "v1.6.0"
+  revision = "bc2269661d49c6c9d0e514eef49710556883f3fa"
+  version = "v1.10.0"
 
 [[projects]]
   digest = "1:870d441fe217b8e689d7949fef6e43efbc787e50f200cb1e70dbca9204a1d6be"
@@ -38,71 +26,86 @@
   version = "v0.1.0"
 
 [[projects]]
-  digest = "1:15b5cc79aad436d47019f814fde81a10221c740dc8ddf769221a65097fb6c2e9"
+  digest = "1:7218fd69ff5436d016101bbc6183cdc289aa45ac37b48e78846318e4ef389bea"
   name = "github.com/kr/text"
   packages = ["."]
   pruneopts = "UT"
-  revision = "e2ffdb16a802fe2bb95e2e35ff34f0e53aeef34f"
-  version = "v0.1.0"
+  revision = "702c74938df48b97370179f33ce2107bd7ff3b3e"
+  version = "v0.2.0"
 
 [[projects]]
-  digest = "1:c658e84ad3916da105a761660dcaeb01e63416c8ec7bc62256a9b411a05fcd67"
+  digest = "1:304d25ecc3f4ca39f894c959254d3f5fc6176276ccf1f874ded0cd441e2f964f"
   name = "github.com/mattn/go-colorable"
   packages = ["."]
   pruneopts = "UT"
-  revision = "167de6bfdfba052fa6b2d3664c8f5272e23c9072"
-  version = "v0.0.9"
+  revision = "2e1b0c1546e0173c0907cf05c67b8ba29ed8b4d1"
+  version = "v0.1.8"
 
 [[projects]]
-  digest = "1:d4d17353dbd05cb52a2a52b7fe1771883b682806f68db442b436294926bbfafb"
+  digest = "1:0c58d31abe2a2ccb429c559b6292e7df89dcda675456fecc282fa90aa08273eb"
   name = "github.com/mattn/go-isatty"
   packages = ["."]
   pruneopts = "UT"
-  revision = "0360b2af4f38e8d38c7fce2a9f4e702702d73a39"
-  version = "v0.0.3"
+  revision = "7b513a986450394f7bbf1476909911b3aa3a55ce"
+  version = "v0.0.12"
 
 [[projects]]
-  digest = "1:7ffc0983035bc7e297da3688d9fe19d60a420e9c38bef23f845c53788ed6a05e"
+  digest = "1:1e80255eea46af2e2db7da90f95e4b5cfe84f3b58d9a8598ec35b0f2a75c60e4"
   name = "github.com/spf13/cobra"
   packages = ["."]
   pruneopts = "UT"
-  revision = "7b2c5ac9fc04fc5efafb60700713d4fa609b777b"
-  version = "v0.0.1"
+  revision = "6607e6b8603f56adb027298ee6695e06ffb3a819"
+  version = "0.0.7"
 
 [[projects]]
-  digest = "1:1b21a2b4058a779f290c7341cd93267492e0ecea6c8b54f64a4a5fd7ff131034"
+  digest = "1:524b71991fc7d9246cc7dc2d9e0886ccb97648091c63e30eef619e6862c955dd"
   name = "github.com/spf13/pflag"
   packages = ["."]
   pruneopts = "UT"
-  revision = "e57e3eeb33f795204c1ca35f56c44f83227c6e66"
-  version = "v1.0.0"
+  revision = "2e9d26c8c37aae03e3f9d4e90b7116f5accb7cab"
+  version = "v1.0.5"
+
+[[projects]]
+  digest = "1:0bbac9aadd8929e0ef6f3ad9e51f0498e56ca4b730f580bf26bb66f69cf83909"
+  name = "github.com/zoocasa/go-kit"
+  packages = [
+    "exec",
+    "testing",
+    "ui/print",
+  ]
+  pruneopts = "UT"
+  revision = "00e7afb1a982b329e15d8649bc7ca130c25387cb"
+  version = "v0.1.6"
 
 [[projects]]
   branch = "master"
-  digest = "1:47a347c704cb09f3b61480613208d7bf1dd15639b5b4fb5c0d1c9ba2f482e894"
+  digest = "1:cc16b8d9edce3c401e6e9c03e99a82c9747f10691c9a3c0d8bd31fa4a61d4230"
   name = "golang.org/x/sys"
-  packages = ["unix"]
+  packages = [
+    "internal/unsafeheader",
+    "unix",
+  ]
   pruneopts = "UT"
-  revision = "91ee8cde435411ca3f1cd365e8f20131aed4d0a1"
+  revision = "4bcb84eeeb78d47aae60461dac79349e427b5349"
 
 [[projects]]
-  digest = "1:2a81c6e126d36ad027328cffaa4888fc3be40f09dc48028d1f93705b718130b9"
+  digest = "1:5054a1f394226de9e6ddc47b0ba77e35092a4112f4a1cd9cb94aba1f5bdc3ec6"
   name = "gopkg.in/yaml.v2"
   packages = ["."]
   pruneopts = "UT"
-  revision = "7f97868eec74b32b0982dd158a51a446d1da7eb5"
-  version = "v2.1.1"
+  revision = "7649d4548cb53a614db133b2a8ac1f31859dda8c"
+  version = "v2.4.0"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/egjiri/go-kit/exec",
-    "github.com/egjiri/go-kit/testing",
-    "github.com/egjiri/go-kit/ui/print",
     "github.com/fatih/color",
     "github.com/spf13/cobra",
     "github.com/spf13/pflag",
+    "github.com/zoocasa/go-kit/exec",
+    "github.com/zoocasa/go-kit/testing",
+    "github.com/zoocasa/go-kit/ui/print",
     "gopkg.in/yaml.v2",
   ]
   solver-name = "gps-cdcl"

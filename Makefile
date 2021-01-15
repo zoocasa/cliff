@@ -24,5 +24,5 @@ lint:
 	@ gometalinter --vendor --deadline 30s ./...
 
 install:
-	docker build -t egjiri/cliff:latest -f .docker/Dockerfile .
-	go run main.go build github.com/egjiri/cliff
+	docker build -t zoocasa/cliff:latest -f .docker/Dockerfile .
+	go run main.go build github.com/zoocasa/cliff

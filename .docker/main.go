@@ -8,8 +8,8 @@ import (
 )
 
 func main() {
-	prefix := strings.Replace(os.Args[1], "github.com/egjiri/cliff/vendor/", "", 1)
-	modifyCliCode(prefix + "github.com/egjiri/cliff/cliff/cliff.go")
+	prefix := strings.Replace(os.Args[1], "github.com/zoocasa/cliff/vendor/", "", 1)
+	modifyCliCode(prefix + "github.com/zoocasa/cliff/cliff/cliff.go")
 }
 
 func modifyCliCode(filePath string) {
@@ -18,7 +18,7 @@ func modifyCliCode(filePath string) {
 		log.Fatal(err)
 	}
 
-	newCode := strings.Replace(string(code), "import (", "import (\n	\"github.com/egjiri/cliff/data\"", 1)
+	newCode := strings.Replace(string(code), "import (", "import (\n	\"github.com/zoocasa/cliff/data\"", 1)
 	newCode = strings.Replace(newCode, "yamlConfigContent, err := ioutil.ReadFile(path)", "yamlConfigContent, err := data.Asset(\"cli.yml\")", -1)
 	if !strings.Contains(newCode, "ioutil.") {
 		newCode = strings.Replace(newCode, "\"io/ioutil\"", "// \"io/ioutil\"", 1)

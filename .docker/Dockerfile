@@ -4,7 +4,7 @@ FROM golang:1.12.1 as builder
 RUN go get -u github.com/jteeuwen/go-bindata/...
 
 # Copy the source code converter script
-COPY .docker /go/src/github.com/egjiri/cliff/.docker
+COPY .docker /go/src/github.com/zoocasa/cliff/.docker
 
 # Specifiy a volume to mount external cli.yml files or other cliff based projects
 VOLUME /data
@@ -22,6 +22,6 @@ ENV GOBUILD_FLAGS=""
 ENV REPO=""
 
 # Run the script to build the project
-CMD sh /go/src/github.com/egjiri/cliff/.docker/build.sh
+CMD sh /go/src/github.com/zoocasa/cliff/.docker/build.sh
 
-LABEL image="egjiri/cliff:0.1.3"
+LABEL image="zoocasa/cliff:0.1.3"
